@@ -7,17 +7,18 @@ This is the style sheet for Southern Sweet Treat Delights
 
 @charset "utf-8";
 
+@font-face 
+    {
+    font-family: 'Dancing Script', Verdana, cursive;
+    font-style: bold;
+    font-weight: 700;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);
+    }
+
 body {background-color: rgb(176,219,216)}
 h1 {text-align: center}
 p {font-family: verdana;
-   font-size: 40px;}
+   font-size: 14pt;}
 
-/*@font-face {
-    font-family: 'EDU NSW ACT Foundation', Verdana, cursive;
-    src: url(https://fonts.googleapis.com);}
-
-h1 {font-family: 'EDU NSW ACT Foundation', Verdana, cursive;} 
-styles the title (name of business)
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-*/
+h1 {font-family: 'Dancing Script', Verdana, cursive;} 
+/*styles the title (name of business)*/
