@@ -15,7 +15,8 @@ This is the style sheet for Southern Sweet Treat Delights
     src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap)
     format('woff2');
     }
-nav {list-style-type: none;}
+nav > ul {line-height: 2em;
+          list-style-type: none;}
 
 /*changes the background on the entire website*/
 body {background-color: rgb(176,219,216)}
