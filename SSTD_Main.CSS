@@ -15,8 +15,11 @@ This is the style sheet for Southern Sweet Treat Delights
     src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap)
     format('woff2');
     }
+nav {list-style: none;}
 
+/*changes the background on the entire website*/
 body {background-color: rgb(176,219,216)}
+
 /*styles the title (name of business)*/
 h1 {font-family: 'Dancing Script', cursive;
     font-size: 16pt;
