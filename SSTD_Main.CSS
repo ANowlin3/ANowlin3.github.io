@@ -9,7 +9,7 @@ This is the style sheet for Southern Sweet Treat Delights
 
 @font-face 
     {
-    font-family: 'Dancing Script'
+    font-family: 'Dancing Script', cursive;
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap)
