@@ -4,13 +4,16 @@ Date: 7/18/2022
 File Name: SSTD_Main.CSS
 This is the style sheet for Southern Sweet Treat Delights
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 @charset "utf-8";
 
 @font-face 
     {
-    font-family: 'Dancing Script', local(Verdana), local(cursive);
-    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap);
+    font-family: 'Dancing Script'
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap)
+    format('woff2');
     }
 
 body {background-color: rgb(176,219,216)}
