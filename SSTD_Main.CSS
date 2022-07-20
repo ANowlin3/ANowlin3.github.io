@@ -22,11 +22,12 @@ body {background-color: rgb(176,219,216)}
 
 /*styles the title (name of business)*/
 h1 {font-family: 'Dancing Script', cursive;
-    font-size: 16pt;
+    font-size: 20pt;
     text-align: center;}
 
 p {font-family: verdana;
    font-size: 10pt;}
 
+/*formatting of lists*/
 article.syllabus ol{list-style-type: decimal;}
-article.syllabus ol ol{list-style-type: disc}
+article.syllabus ol ol{list-style-type: disc;}
