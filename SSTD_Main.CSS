@@ -23,12 +23,16 @@ body {background-color: rgb(176,219,216)}
 
 /*styles the title (name of business) at the top of the webpage on every page*/
 h1 {font-family: 'Dancing Script', cursive;
-    font-size: 20pt;
+    font-size: 24pt;
     text-align: center;
     color: rgb(189, 88, 128);}
 
 p {font-family: verdana;
    font-size: 10pt;}
+
+p::first-letter {color:rgb(189, 88, 128)
+                 font-style:bold
+                 font-size:20pt}
 
 /*formatting of lists*/
 article ul {list-style-type: decimal;}
