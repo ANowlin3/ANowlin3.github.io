@@ -16,9 +16,9 @@ This is the style sheet for Southern Sweet Treat Delights
     }
 
 body {background-color: rgb(176,219,216)}
-h1 {text-align: center}
+h1 {font-family: 'Dancing Script', Verdana, cursive;
+    text-align: center}
 p {font-family: verdana;
-   font-size: 14pt;}
+   font-size: 10pt;}
 
-h1 {font-family: 'Dancing Script', Verdana, cursive;} 
 /*styles the title (name of business)*/
