@@ -29,5 +29,5 @@ p {font-family: verdana;
    font-size: 10pt;}
 
 /*formatting of lists*/
-article.syllabus ol{list-style-type: decimal;}
-article.syllabus ol ol{list-style-type: disc;}
+article ol{list-style-type: decimal;}
+article ol ol{list-style-type: disc;}
