@@ -9,7 +9,8 @@ This is the style sheet for Southern Sweet Treat Delights
 
 body {background-color: rgb(176,219,216)}
 h1 {text-align: center}
-p {font-family: verdana;}
+p {font-family: verdana;
+   font-size: 20px;}
 
 /*@font-face {
     font-family: 'EDU NSW ACT Foundation', Verdana, cursive;
