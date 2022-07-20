@@ -30,5 +30,5 @@ p {font-family: verdana;
    font-size: 10pt;}
 
 /*formatting of lists*/
-article ol{list-style-type: decimal;}
-article ol ol{list-style-type: disc;}
+article#index ul {list-style-type: decimal;}
+/*article{list-style-type: disc;}*/
