@@ -31,5 +31,6 @@ p {font-family: verdana;
    font-size: 10pt;}
 
 /*formatting of lists*/
-article#index ul {list-style-type: decimal;}
+article ul {list-style-type: decimal;}
 /*article{list-style-type: disc;}*/
+
