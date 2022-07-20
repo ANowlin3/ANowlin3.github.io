@@ -18,7 +18,7 @@ This is the style sheet for Southern Sweet Treat Delights
 nav {list-style-type: none;}
 
 /*changes the background on the entire website*/
-body {background-color: rgb(176,219,216)}
+body {background-color: rgb(176,219,216)
 
 /*styles the title (name of business)*/
 h1 {font-family: 'Dancing Script', cursive;
@@ -27,3 +27,6 @@ h1 {font-family: 'Dancing Script', cursive;
 
 p {font-family: verdana;
    font-size: 10pt;}
+
+article.syllabus ol{list-style-type: decimal;}
+article.syllabus ol ol{list-style-type: disc}
