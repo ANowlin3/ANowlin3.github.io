@@ -7,11 +7,16 @@ This is the style sheet for Southern Sweet Treat Delights
 
 @charset "utf-8";
 
-html{background-color: rgb(176,219,216)}
+body {background-color: rgb(176,219,216)}
+h1 {text-align: center}
+p {font-family: verdana;}
 
-@font-face {
+/*@font-face {
     font-family: 'EDU NSW ACT Foundation', Verdana, cursive;
     src: url(https://fonts.googleapis.com);}
 
 h1 {font-family: 'EDU NSW ACT Foundation', Verdana, cursive;} 
-/* styles the title (name of business)*/
+styles the title (name of business)
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+*/
