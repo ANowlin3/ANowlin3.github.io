@@ -42,20 +42,20 @@ p::first-letter {color:rgb(189, 88, 128)
                  font-size:20pt}
 
 /*formatting of lists*/
-article ul {list-style-type: none;
+article li{list-style-type: none;
             background-image: url(Images/wholecakebullet.jpg);
             background-repeat: no-repeat;
             padding-left: 18px;
             background-position: 0px 2px;
-            background-size: 14px;
+            background-size: 16px;
             font-family: verdana;
             font-size: 12pt;}
-article ul ul{list-style-type: none;
+article ul li{list-style-image: none;
               background-image: url(Images/slicecakebullet.jpg);
               background-repeat: no-repeat;
               padding-left: 18px;
               background-position: 0px 2px; 
-              background-size: 14px;
+              background-size: 16px;
               font-family: verdana;
               font-size: 12pt;}
 
