@@ -35,11 +35,11 @@ p::first-letter {color:rgb(189, 88, 128)
                  font-size:20pt}
 
 /*formatting of lists*/
-article ul {list-style-type: decimal;
+article ul {list-style-image: url(Images/wholecakebullet.jpg);
             list-style-position: outside; 
             font-family: verdana;
             font-size: 12pt;}
-article ul ul{list-style-type: disc;
+article ul ul{list-style-image: url(Images/slicecakebullet.jpg);
               list-style-position: outside; 
               font-family: verdana;
               font-size: 12pt;}
