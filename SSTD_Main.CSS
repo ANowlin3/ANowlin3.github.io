@@ -27,6 +27,12 @@ h1 {font-family: 'Dancing Script', cursive;
     text-align: center;
     color: rgb(189, 88, 128);}
 
+h4 {font-family: Verdana;
+    text-align: center}
+
+h6 {font-family: Verdana;
+    text-align: center;}
+
 p {font-family: verdana;
    font-size: 12pt;}
 
