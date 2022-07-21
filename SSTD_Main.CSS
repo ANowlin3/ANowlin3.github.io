@@ -47,6 +47,7 @@ article ul {list-style-type: none;
             background-repeat: no-repeat;
             padding-left: 18px;
             background-position: 0px 2px;
+            background-size: 10px;
             font-family: verdana;
             font-size: 12pt;}
 article ul ul{list-style-type: none;
@@ -54,6 +55,7 @@ article ul ul{list-style-type: none;
               background-repeat: no-repeat;
               padding-left: 18px;
               background-position: 0px 2px; 
+              background-size: 10px;
               font-family: verdana;
               font-size: 12pt;}
 
