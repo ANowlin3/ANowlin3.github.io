@@ -12,7 +12,7 @@ This is the style sheet for Southern Sweet Treat Delights
     font-family: 'Dancing Script', cursive;
     font-style: normal;
     font-weight: 700;
-    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap')
+    src: url(https://fonts.google.com/specimen/Dancing+Script?query=Dancing+Script)
     format('woff2');
     }
 nav > ul {/*line-height: 2em;*/
