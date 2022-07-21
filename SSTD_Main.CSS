@@ -16,7 +16,8 @@ This is the style sheet for Southern Sweet Treat Delights
     format('woff2');
     }
 nav > ul {/*line-height: 2em;*/
-          list-style-type: none;}
+          list-style-type: none;
+          text-align: center;}
 
 /*changes the background on the entire website*/
 body {background-color: rgb(176,219,216)}
