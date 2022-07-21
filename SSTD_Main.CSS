@@ -36,7 +36,9 @@ p::first-letter {color:rgb(189, 88, 128)
 
 /*formatting of lists*/
 article ul {list-style-type: decimal;
-            list-style-position: outside; }
+            list-style-position: outside; 
+            font-family: verdana;}
 article ul ul{list-style-type: disc;
-              list-style-position: outside; }
+              list-style-position: outside; 
+              font-family: verdana;}
 
