@@ -21,20 +21,42 @@ This is the style sheet for Southern Sweet Treat Delights
 /*Formats the navigation section
 Removes markers
 aligns it center*/
-nav > ul {/*line-height: 2em;*/
-          list-style-type: none;
-          text-align: center;}
+/*changes the background on the entire website*/
+body {background-color: rgb(176,219,216)}
+
+/*header {text-align: center;
+        background-color:white;
+        margin:0;
+        padding:5px;
+    border-top:none;
+        border-bottom-style:solid;
+        border-bottom-width: medium;
+        border-bottom-color: white;}*/
+
+nav > ul {list-style:none;
+          margin:20px;
+          padding:0;
+          width:525px;
+          }
+nav ul a{text-decoration: none;
+         padding:5px 0;
+         width: 100px;
+         background: rgb(189, 88, 128);
+         float:left;
+         text-align:center;
+         border:2px solid; 
+         border-color: white;
+        }
+
 /*These change the hyperlinks format in the navigation because they are anchored links 
 ensure these are in the correct order (link, visited, hover, active)
 Text-decoration none ensures the navigation links aren't underlined'*/
-a:link{color:rgb(99,73,122); text-decoration:none;}
-a:visted{color:rgb(244,120,57); text-decoration:none;}
-a:hover{color:rgb(28,165,198)}
+a:link{color:rgb(226,224,61); text-decoration:none;}
+a:visted{color:rgb(244,120,57);text-decoration:none;}
+a:hover{color:white;}
 /*a:active{}*/
 
-/*changes the background on the entire website*/
-body {background-color: rgb(176,219,216)}
-/*header {image-orientation: center}*/
+
 /*styles the title (name of business) at the top of the webpage on every page*/
 h1 {font-family: 'Dancing Script', cursive;
     font-size: 40pt;
@@ -50,11 +72,13 @@ h6 {font-family: Verdana;
 p {font-family: verdana;
    font-size: 12pt;}
 
-p:first-letter {color:rgb(189, 88, 128)
-                 font-style:bold
-                 font-size:20pt}
+blockquote p::first-letter {font-family: 'Dancing Script', cursive;
+                            text-transform: uppercase;
+                            color:rgb(189, 88, 128)
+                            font-size:20pt}
 
-/*formatting of lists*/
+/*formatting of lists
+has images in place of the markers with different markers for main and sub lists*/
 article ul li{list-style-type: none;
             background-image: url(Images/wholecakebullet.jpg);
             background-repeat: no-repeat;
