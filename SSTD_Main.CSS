@@ -6,7 +6,9 @@ This is the style sheet for Southern Sweet Treat Delights
 */
 
 @charset "utf-8";
+/*establishes the google font*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 @font-face 
     {
     font-family: 'Dancing Script', cursive;
@@ -14,9 +16,21 @@ This is the style sheet for Southern Sweet Treat Delights
     font-weight: 700;
     ;
      }
+
+
+/*Formats the navigation section
+Removes markers
+aligns it center*/
 nav > ul {/*line-height: 2em;*/
           list-style-type: none;
           text-align: center;}
+/*These change the hyperlinks format in the navigation because they are anchored links 
+ensure these are in the correct order (link, visited, hover, active)
+Text-decoration none ensures the navigation links aren't underlined'*/
+a:link{color:rgb(99,73,122); text-decoration:none;}
+a:visted{color:rgb(244,120,57); text-decoration:none;}
+a:hover{color:rgb(28,165,198)}
+/*a:active{}*/
 
 /*changes the background on the entire website*/
 body {background-color: rgb(176,219,216)}
@@ -32,11 +46,6 @@ h4 {font-family: Verdana;
 
 h6 {font-family: Verdana;
     text-align: center;}
-
-a:link{color:rgb(99,73,122)}
-a:visted{color:rgb(244,120,57)}
-a:hover{color:rgb(226,224,61)}
-
 
 p {font-family: verdana;
    font-size: 12pt;}
