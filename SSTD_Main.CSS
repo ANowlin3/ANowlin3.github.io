@@ -33,10 +33,15 @@ h4 {font-family: Verdana;
 h6 {font-family: Verdana;
     text-align: center;}
 
+a:link{color:rgb(99,73,122)}
+a:visted{color:rgb(244,120,57)}
+a:hover{color:rgb(226,224,61)}
+
+
 p {font-family: verdana;
    font-size: 12pt;}
 
-p::first-letter {color:rgb(189, 88, 128)
+p:first-letter {color:rgb(189, 88, 128)
                  font-style:bold
                  font-size:20pt}
 
