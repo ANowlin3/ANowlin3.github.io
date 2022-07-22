@@ -26,23 +26,28 @@ body {background-color: rgb(176,219,216);
 
 header {text-align: center;
         background-color:white;
-        width: 100%;
         margin:0;
-        padding:0;}
+        padding:0;
+        width:100%;
+        position:fixed;
+        top:0;
+        height:250px;
+        }
 
+/*navigation section*/
 nav ul {list-style:none;
         background: rgb(189, 88, 128);
-        margin:10px 0;
+        margin:0;
         padding:0;
         text-align:center;
         }
 nav li {display:inline-block;
-        margin-left:70px
+        margin-left:70px;
         }
 nav a{text-decoration: none;
         width: 100px;
         display:block;
-        padding:25px;
+        padding:15px;
         font-family: 'Dancing Script', cursive;
         font-size: 24px;
         font-weight:bolder;
@@ -51,9 +56,9 @@ nav a{text-decoration: none;
 /*Formatting anchored hyperlinks
 Code in the correct order: link, visited, hover, active
 */
-nav a:link {color:white}
-nav a:visted{color:yellow;}
-nav a:hover{background:white; color:rgb(99,73,122);text-decoration:underline;}   
+nav a:link {color:white} /*general color*/
+nav a:visited {color:aqua;} /*color for previous visited*/
+nav a:hover{background:white; color:rgb(99,73,122);text-decoration:underline;} /*hovering properties: changes background to white, text to purple, and underlines it*/  
    
 
 /*styles the title (name of business) at the top of the webpage on every page*/
@@ -61,46 +66,96 @@ h1 {font-family: 'Dancing Script', cursive;
     font-size: 40pt;
     text-align: center;
     color: rgb(189, 88, 128);}
-
+/*styles the title of the article, if one exists*/
+/*currently not used - adjust when needed
+h2 {font-family: 'Dancing Script', cursive;
+    font-size: 30pt;
+    text-align: left;
+    color: rgb(189, 88, 128);}
+h3 {font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: rgb(189, 88, 128);}
 h4 {font-family: Verdana;
-    text-align: center}
-
+    text-align: center}*/
+/*styles the business location/contact info in footer*/
 h5 {font-family: Verdana;
-    text-align: center;}
-
+    text-align: center;
+    padding:0pt;}
+/*styles the copyright*/
 h6 {font-family: Verdana;
-    text-align: center;}
+    text-align: center;
+    padding:10px;}
 
+section {margin-left:10px;
+        padding-top:330px;
+        padding-bottom:175px;
+        
+        width:100%;}
+/*styles the paragraphs*/
 p {margin: 5px;
    padding:5px;
    font-family: verdana;
    font-size: 12pt;}
-
+/*styles the first letter of every paragraph*/
 p::first-letter {font-family: 'Dancing Script', cursive;
                 color:rgb(189, 88, 128);
                 font-size:30pt;}
+/*pushes the image to the right on every webpage*/
+#image_container {background:rgb(176,219,216);
+                  width:30%;
+                  float:right;
+                  margin-top:50px;}
+/*not using this yet - update later
+#content_container {background:rgb(176,219,216);
+                  width:75%;
+                  float:left;}*/
+/*formatting of lists contained in an article
+Markers are images / different for main &sub lists
+*/
+/*main list*/
 
-#image {background:rgb(176,219,216);
-        width:25%;
-        float:right;}
-
-/*formatting of lists
-has images in place of the markers with different markers for main and sub lists*/
-article ul li{list-style-type: none;
-            background-image: url(Images/wholecakebullet.jpg);
-            background-repeat: no-repeat;
+article ul li{list-style-type: none; /*removes markers*/
+            background-image: url(Images/wholecakebullet.jpg); /*inserting the marker image*/
+            background-repeat: no-repeat; /*allows it only appear once*/
             padding-left: 18px;
             margin:5px;
-            background-position: 0px 2px;
-            background-size: 16px;
-            font-family: verdana;
+            background-position: 0px 2px; /*moves the marker location*/
+            background-size: 16px; /*changes the size of the marker*/
+            font-family: verdana; 
             font-size: 11pt;}
-article ul ul li{list-style-image: none;
-              background-image: url(Images/slicecakebullet.jpg);
-              background-repeat: no-repeat;
+/*sub list*/
+article ul ul li{list-style-image: none; /*removes markers*/
+              background-image: url(Images/slicecakebullet.jpg); /*inserting the marker image*/
+              background-repeat: no-repeat; /*allows it only appear once*/
               padding-left: 18px;
-              background-position: 0px 2px; 
-              background-size: 16px;
+              background-position: 0px 2px; /*moves the marker location*/
+              background-size: 16px; /*changes the size of the marker*/
               font-family: verdana;
               font-size: 10pt;}
-article footer {text-align:center;}
+
+footer {background-color:white;
+        text-align: center;
+        color: rgb(189, 88, 128); /*changes the font color*/
+        padding:0;
+        margin:0;
+        position:fixed;
+        width:100%;
+        bottom:0;
+        }
+
+#nav_footer ul{list-style-type: none;
+                background-color:rgb(189, 88, 128);
+                margin:0;
+                padding:10px;
+                text-align:center;
+                }
+/*adjusts the appearance of the hyperlinks*/
+#nav_footer a{text-decoration: none; /*no markers*/
+        display:contents;
+        font-family: verdana;
+        font-size: 14px;
+        text-align:center;}
+
+#nav_footer a:link {color:rgb(99,73,122);} /*general color*/
+#nav_footer a:visited {color:aqua;} /*color for previous visited*/
+#nav_footer a:hover{color:white;} /*color for hoverivg and also puts an underline on the selection*/
