@@ -67,11 +67,12 @@ h1 {font-family: 'Dancing Script', cursive;
     text-align: center;
     color: rgb(189, 88, 128);}
 /*styles the title of the article, if one exists*/
-/*currently not used - adjust when needed
+
 h2 {font-family: 'Dancing Script', cursive;
     font-size: 30pt;
     text-align: left;
     color: rgb(189, 88, 128);}
+/*currently not used - adjust when needed
 h3 {font-family: 'Dancing Script', cursive;
     text-align: center;
     color: rgb(189, 88, 128);}
@@ -89,13 +90,14 @@ h6 {font-family: Verdana;
 section {margin-left:10px;
         padding-top:330px;
         padding-bottom:175px;
-        
         width:100%;}
-/*styles the paragraphs*/
+
+/*styles the paragraphs no matter the location in the document*/
 p {margin: 5px;
    padding:5px;
    font-family: verdana;
    font-size: 12pt;}
+
 /*styles the first letter of every paragraph*/
 p::first-letter {font-family: 'Dancing Script', cursive;
                 color:rgb(189, 88, 128);
@@ -104,7 +106,9 @@ p::first-letter {font-family: 'Dancing Script', cursive;
 #image_container {background:rgb(176,219,216);
                   width:30%;
                   float:right;
-                  margin-top:50px;}
+                  margin-left:10px;
+                  padding-top:0;
+                  padding-bottom:175px;}
 /*not using this yet - update later
 #content_container {background:rgb(176,219,216);
                   width:75%;
@@ -156,6 +160,6 @@ footer {background-color:white;
         font-size: 14px;
         text-align:center;}
 
-#nav_footer a:link {color:rgb(99,73,122);} /*general color*/
+#nav_footer a:link {color:white;} /*general color*/
 #nav_footer a:visited {color:aqua;} /*color for previous visited*/
-#nav_footer a:hover{color:white;} /*color for hoverivg and also puts an underline on the selection*/
+#nav_footer a:hover{color:rgb(99,73,122);} /*color for hoverivg and also puts an underline on the selection*/

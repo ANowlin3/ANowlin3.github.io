@@ -6,7 +6,7 @@
     Author: Ashley Nowlin
     Date: 7/16/22
     FileName: Template.html
-    Summary: Provides the general layout of the website for Southern Sweet Treat Delights.
+    Summary: Setting up the Southern Sweet Treat Delights website (homepage) which will provide general information regarding the company, items on the menu, services offered, reviews, and contact information. 
     -->
     
     <meta charset="utf-8" />
@@ -15,8 +15,7 @@
     
     <title>Southern Sweet Treat Delights</title> <!--this shows on the title bar and the tab -->
     
-    <!--link to style sheet (not sure how to set up a stylesheet yet - It is commented out for this reason.)
-    <link rel="stylesheet" href="main.css"> -->
+    <link href="SSTD_Main.CSS" rel="stylesheet">
     
 </head>
 
@@ -26,17 +25,16 @@
         the logo should link back to the homepage
         Navigation should all link to the appropriate pages
         -->
-        <a href="https://anowlin3.github.io/"><img src="/Images/LogoBanner.jpeg" alt="Southern Sweet Treat Delights"
-                                    height="150" width="500"></a>
-        
-        <h1>Welcome to Southern Sweet Treat Delights</h1>
-        
+       
+        <h1>Southern Sweet Treat Delights<br><a href="/index.html"> <img src="/Images/LogoBanner.jpeg" alt="Southern Sweet Treat Delights" height="100" width="500" class="logo"></a>
+        </h1>
+
         <nav>
             <ul>
-                <li><a href="/SSTD_About_Us.html">About Us</a></li>
-                <li><a href="/SSTD_Services.html">Services</a></li>
-                <li><a href="/SSTD_Gallery.html">Gallery</a></li>
-                <li><a href="/SSTD_Contact_Us.html">Contact Us</a></li>
+                <li><a href="/SSTD_About_Us.html">About Us</a> </li>
+                <li><a href="/SSTD_Services.html">Services</a> </li>
+                <li><a href="/SSTD_Gallery.html">Gallery</a> </li>
+                <li><a href="/SSTD_Contact_Us.html">Contact Us</a> </li>
             </ul>
         </nav>
     </header>
@@ -45,18 +43,14 @@
     Be sure to insert an image on the page below the nameof the section-->
     <section>
         <article>
-            <header>
-               <!--
-                Insert Page Name here, if desired  <h1>About</h1>
-                Insert image here <img src="/images/dessertpic.jpeg" alt=""> 
-                -->
-            </header>
-            
             <!--Insert desired content here: lists, text, images, videos, objects, etc. to represent the body of the article-->
+            <div id="image_container">
+            <!--Update to reflect correct picture-->
             
-            <footer>
-                <!--Insert desired content here: lists, text, images, videos, objects, etc.-->
-            </footer>
+            </div>
+            <div id="content_container">
+            <!--content goes here<p></p>-->
+            </div>
         </article>
     </section>
 
@@ -65,15 +59,15 @@
     This section remains untouched for template purposes.
     -->
     <footer>
-        <h4>Southern Sweet Treat Delights &nbsp; &#8226; &nbsp; 1111 Beachside Drive, Panama City Beach, FL 32444 &nbsp; &#8226; &nbsp; (850) 555-5086 </h4>
-        <nav>
+        <div id="nav_footer">
             <ul>
-                <li><a href="/SSTD_About_Us.html">About Us</a></li>
-                <li><a href="/SSTD_Services.html">Services</a></li>
-                <li><a href="/SSTD_Gallery.html">Gallery</a></li>
-                <li><a href="/SSTD_Contact_Us.html">Contact Us</a></li>
+                <a href="/SSTD_About_Us.html">| About Us |</a> 
+                <a href="/SSTD_Services.html">| Services |</a>
+                <a href="/SSTD_Gallery.html">| Gallery |</a> 
+                <a href="/SSTD_Contact_Us.html">| Contact Us |</a>
             </ul>
-        </nav>
+        </div>
+        <h5>Southern Sweet Treat Delights &nbsp; &#8226; &nbsp; 1111 Beachside Drive, Panama City Beach, FL 32444 &nbsp; &#8226; &nbsp; (850) 555-5086 </h5>
         <h6> &#169;SouthernSweetTreatDelights 2022 </h6>
     </footer>
     

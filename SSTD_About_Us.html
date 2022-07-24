@@ -5,18 +5,17 @@
     <!--
     Author: Ashley Nowlin
     Date: 7/16/22
-    FileName: SSTD_About_Us.html
-    Summary: More in-depth information regarding the company and what makes it unique from other bakeries. Review high level services, hours of operation, one review. 
+    FileName: Template.html
+    Summary: Setting up the Southern Sweet Treat Delights website (homepage) which will provide general information regarding the company, items on the menu, services offered, reviews, and contact information. 
     -->
     
     <meta charset="utf-8" />
     <meta name = "Keywords"
           content = "Desserts, Baking, Bake, Food, Date Night" />
     
-    <title>About: Southern Sweet Treat Delights</title> <!--this shows on the title bar and the tab --> <!--Update the tab Name -->
+    <title>Southern Sweet Treat Delights</title> <!--this shows on the title bar and the tab -->
     
-    <!--link to style sheet (not sure how to set up a stylesheet yet - It is commented out for this reason.)
-    <link rel="stylesheet" href="main.css"> -->
+    <link href="SSTD_Main.CSS" rel="stylesheet">
     
 </head>
 
@@ -25,44 +24,39 @@
         <!--the header is the very top of the window which includes the logo, name of the business, and the navigation links
         the logo should link back to the homepage
         Navigation should all link to the appropriate pages
-        This section remains untouched for template purposes.
         -->
-        <a href="https://anowlin3.github.io/"><img src="/Images/LogoBanner.jpeg" alt="Southern Sweet Treat Delights"
-                                    height="150" width="500"></a>
-        
-        <h1>Welcome to Southern Sweet Treat Delights</h1>
-        
+       
+        <h1>Southern Sweet Treat Delights<br><a href="/index.html"> <img src="/Images/LogoBanner.jpeg" alt="Southern Sweet Treat Delights" height="100" width="500" class="logo"></a>
+        </h1>
+
         <nav>
             <ul>
-                <li><a href="/SSTD_About_Us.html">About Us</a></li>
-                <li><a href="/SSTD_Services.html">Services</a></li>
-                <li><a href="/SSTD_Gallery.html">Gallery</a></li>
-                <li><a href="/SSTD_Contact_Us.html">Contact Us</a></li>
+                <li><a href="/SSTD_About_Us.html">About Us</a> </li>
+                <li><a href="/SSTD_Services.html">Services</a> </li>
+                <li><a href="/SSTD_Gallery.html">Gallery</a> </li>
+                <li><a href="/SSTD_Contact_Us.html">Contact Us</a> </li>
             </ul>
         </nav>
     </header>
     
-    <!--Update this section to match the content of the page. 
-    About page, which talks high level about the services offered and what makes the company unique.
+    <!--this is the content of the page. This is in reference to the About page, which talks high level about the services offered and what makes the company unique.
     Be sure to insert an image on the page below the nameof the section-->
     <section>
         <article>
-            <header>
-                <!--Insert Page Name here, if desired <h1>About</h1>-->
-                <h1>About Us</h1> 
-                <img src="/Images/decorating.jpg" alt=""/> <!--Update to reflect correct picture-->
-            </header>
+            
+            <h2>About Southern Sweet Treat Delights</h2> 
             
             <!--Insert desired content here: lists, text, images, videos, objects, etc. to represent the body of the article-->
+            <div id="image_container">
+            <img src="/Images/decorating.jpg" alt=""/>
+            </div>
+            <div id="content_container">
             <p><strong>Southern Sweet Treat Delights</strong> puts on a show with live cake decorating, and sure enough, the performers draw a crowd inside and outside the shop. Count the nose prints on the big glass window! Located on the Boardwalk in Pier Park across from the City Pier, <strong>Southern Sweet Treat Delights </strong>is a destination in itself, steps away from the <em>world's most beautiful beaches</em>in Panama City Beach, FL. </p>
             <p>Indulge yourself as you peer into long glass cases brimming with scores of mouthwatering delights: fine hand-crafted pastries, truffles, fudge, decadent cupcakes, caramel apples and other unique and wonderful sweets not to mention our huge Sugar-Free selection.</p>
             <p>However, our shop isn't just for easing that sweet tooth and watching, it also offers date night experiences during select date/times. Different levels of do-it-yourself subscription services are also available to sharpen your skills of making your own<strong> Southern Sweet Treat Delights</strong> which are fun for the whole family!</p>
             <p>Contact us to design something special for your birthday, wedding or your next gathering and experience what<cite> Southern Living Magazine</cite> calls <q>the finest desserts in the south</q>! </p>
             <p>Stop by our shop anytime Monday through Saturday from 10am to 9pm CST.</p>
-            
-            <footer>
-                <!--Insert desired content here: lists, text, images, videos, objects, etc.-->
-            </footer>
+            </div>
         </article>
     </section>
 
@@ -71,15 +65,15 @@
     This section remains untouched for template purposes.
     -->
     <footer>
-        <h4>Southern Sweet Treat Delights &nbsp; &#8226; &nbsp; 1111 Beachside Drive, Panama City Beach, FL 32444 &nbsp; &#8226; &nbsp; (850) 555-5086 </h4>
-        <nav>
+        <div id="nav_footer">
             <ul>
-                <li><a href="/SSTD_About_Us.html">About Us</a></li>
-                <li><a href="/SSTD_Services.html">Services</a></li>
-                <li><a href="/SSTD_Gallery.html">Gallery</a></li>
-                <li><a href="/SSTD_Contact_Us.html">Contact Us</a></li>
+                <a href="/SSTD_About_Us.html">| About Us |</a> 
+                <a href="/SSTD_Services.html">| Services |</a>
+                <a href="/SSTD_Gallery.html">| Gallery |</a> 
+                <a href="/SSTD_Contact_Us.html">| Contact Us |</a>
             </ul>
-        </nav>
+        </div>
+        <h5>Southern Sweet Treat Delights &nbsp; &#8226; &nbsp; 1111 Beachside Drive, Panama City Beach, FL 32444 &nbsp; &#8226; &nbsp; (850) 555-5086 </h5>
         <h6> &#169;SouthernSweetTreatDelights 2022 </h6>
     </footer>
     
