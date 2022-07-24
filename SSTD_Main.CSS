@@ -150,18 +150,23 @@ footer {background-color:white;
         bottom:0;
         }
 
-#nav_footer ul{list-style-type: none;
+#nav_footer ul {list-style:none;
                 background-color:rgb(189, 88, 128);
                 margin:0;
                 padding:10px;
                 text-align:center;
                 }
+#nav_footer li{list-style:none;
+                display:inline-block;
+                }
 /*adjusts the appearance of the hyperlinks*/
 #nav_footer a{text-decoration: none; /*no markers*/
-        display:contents;
-        font-family: verdana;
-        font-size: 14px;
-        text-align:center;}
+              width: 100px;
+              padding:0;
+              font-family: verdana;
+              font-size: 14px;
+              text-align:center;
+              }
 
 #nav_footer a:link {color:white;} /*general color*/
 #nav_footer a:visited {color:aqua;} /*color for previous visited*/
