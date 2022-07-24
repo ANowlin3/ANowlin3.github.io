@@ -137,6 +137,9 @@ article ul ul li{list-style-image: none; /*removes markers*/
               font-family: verdana;
               font-size: 10pt;}
 
+address {margin-left:20px;
+         font-family:Verdana;
+         font-size:12pt;}
 footer {background-color:white;
         text-align: center;
         color: rgb(189, 88, 128); /*changes the font color*/
