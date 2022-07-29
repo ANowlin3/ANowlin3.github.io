@@ -9,30 +9,32 @@ This is the style sheet for Southern Sweet Treat Delights
 /*establishes the google font*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-@font-face 
-    {
+@font-face {
     font-family: 'Dancing Script', cursive;
     font-style: normal;
     font-weight: 700;
-    ;
-     }
+}
 
-
-
+html {
+	margin: 0;
+	padding: 0;
+	}
 /*changes the background on the entire website*/
 body {background-color: rgb(176,219,216);
       margin:0;
-      padding:0;}
+      padding:0;
+      font-family: Verdana;
+}
 
 header {text-align: center;
         background-color:white;
         margin:0;
         padding:0;
         width:100%;
-        position:fixed;
+        position:absolute;
         top:0;
         height:250px;
-        }
+}
 
 /*navigation section*/
 nav ul {list-style:none;
@@ -76,27 +78,26 @@ h2 {font-family: 'Dancing Script', cursive;
 h3 {font-family: 'Dancing Script', cursive;
     text-align: center;
     color: rgb(189, 88, 128);}
-h4 {font-family: Verdana;
+h4 {
     text-align: center}*/
 /*styles the business location/contact info in footer*/
-h5 {font-family: Verdana;
-    text-align: center;
-    padding:0pt;}
+h5 {text-align: center;
+    padding:0;}
 /*styles the copyright*/
-h6 {font-family: Verdana;
-    text-align: center;
+h6 {text-align: center;
     padding:10px;}
 
 section {margin-left:10px;
         padding-top:330px;
-        padding-bottom:175px;
+        padding-bottom:150px;
+        margin-bottom:20px;
         width:100%;}
 
 /*styles the paragraphs no matter the location in the document*/
 p {margin: 5px;
    padding:5px;
-   font-family: verdana;
-   font-size: 12pt;}
+   font-size: 12pt;
+   line-height: 1.5em}
 
 /*styles the first letter of every paragraph*/
 p::first-letter {font-family: 'Dancing Script', cursive;
@@ -108,11 +109,8 @@ p::first-letter {font-family: 'Dancing Script', cursive;
                   float:right;
                   margin-left:10px;
                   padding-top:0;
-                  padding-bottom:175px;}
-/*not using this yet - update later
-#content_container {background:rgb(176,219,216);
-                  width:75%;
-                  float:left;}*/
+                  ;}
+
 /*formatting of lists contained in an article
 Markers are images / different for main &sub lists
 */
@@ -125,7 +123,6 @@ article ul li{list-style-type: none; /*removes markers*/
             margin:5px;
             background-position: 0px 2px; /*moves the marker location*/
             background-size: 16px; /*changes the size of the marker*/
-            font-family: verdana; 
             font-size: 11pt;}
 /*sub list*/
 article ul ul li{list-style-image: none; /*removes markers*/
@@ -134,21 +131,98 @@ article ul ul li{list-style-image: none; /*removes markers*/
               padding-left: 18px;
               background-position: 0px 2px; /*moves the marker location*/
               background-size: 16px; /*changes the size of the marker*/
-              font-family: verdana;
               font-size: 10pt;}
 
+
+
+/*not using this yet - update later
+#content_container {background:rgb(176,219,216);
+                  width:70%;
+                  float:left;}*/
+
+/*format a table*/
+#table{border-collapse:collapse; /*removes double borders*/
+      text-align:center;
+}
+table, th, td{border: 2px solid black;  
+              border-collapse:collapse;
+              text-align:center;
+              padding-left:5px;
+}
+th{height: 20px;
+   width: 100px;
+   background-color:rgb(189, 88, 128);
+   color: white;
+   font-weight:bold;
+}
+.service_container1{width:75%;
+                    height:175px;
+                    margin: auto;
+                    float:left;
+}
+.service_image1{width:25%;
+                height:175px;
+                margin: auto;
+                float:right;
+                display:block;
+                overflow: hidden;
+}
+.service_container2{width:75%;
+                    height:175px;
+                    margin: auto;
+                    float:left;
+}
+.service_image2{width:25%;
+                height:175px;
+                margin: auto;
+                float:right;
+                display:block;
+                overflow: hidden;
+}
+.service_container3{width:75%;
+                    height:175px;
+                    margin: auto;
+                    float:left;
+}
+.service_image3{width:25%;
+                height:175px;
+                margin: auto;
+                float:right;
+                display:block;
+                overflow: hidden;
+}
+.service_container4{width:75%;
+                    height:175px;
+                    margin: auto;
+                    float:left;
+                    padding-bottom:200px;
+}
+.service_image4{width:25%;
+                height:175px;
+                margin: auto;
+                float:right;
+                display:block;
+                overflow: hidden;
+                padding-bottom:200px;
+}
+
+/*formats the address*/
 address {margin-left:20px;
-         font-family:Verdana;
-         font-size:12pt;}
+         font-size:12pt;
+        padding:15px;
+}
+
+/*formats the main footer box*/
 footer {background-color:white;
         text-align: center;
         color: rgb(189, 88, 128); /*changes the font color*/
         padding:0;
         margin:0;
-        position:fixed;
-        width:100%;
-        bottom:0;
-        }
+        position:fixed; /*makes it stay in the bottom no matter where the person is at on the page.*/
+        width:100%; /*makes this liquid to adjust to the screen size*/
+        bottom:0; /*fixes the position at the bottom of the screen*/
+        height:150px;
+}
 
 #nav_footer ul {list-style:none;
                 background-color:rgb(189, 88, 128);
@@ -163,7 +237,6 @@ footer {background-color:white;
 #nav_footer a{text-decoration: none; /*no markers*/
               width: 100px;
               padding:0;
-              font-family: verdana;
               font-size: 14px;
               text-align:center;
               }
