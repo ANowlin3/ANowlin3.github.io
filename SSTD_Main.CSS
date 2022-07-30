@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* 
 Author: Ashley Nowlin
 Date: 7/18/2022
@@ -5,25 +6,15 @@ File Name: SSTD_Main.CSS
 This is the style sheet for Southern Sweet Treat Delights
 */
 
-@charset "utf-8";
 /*establishes the google font*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-@font-face {
-    font-family: 'Dancing Script', cursive;
-    font-style: normal;
-    font-weight: 700;
-}
 
-html {
-	margin: 0;
-	padding: 0;
-	}
 /*changes the background on the entire website*/
 body {background-color: rgb(176,219,216);
       margin:0;
       padding:0;
-      font-family: Verdana;
+      font-family: Verdana; /*changes it all to Verdana unless otherwise specified*/
 }
 
 header {text-align: center;
@@ -37,6 +28,7 @@ header {text-align: center;
 }
 
 /*navigation section*/
+nav{width:100%}
 nav ul {list-style:none;
         background: rgb(189, 88, 128);
         margin:0;
@@ -92,23 +84,27 @@ section {margin-left:10px;
         padding-bottom:150px;
         margin-bottom:20px;
         width:100%;}
-
-figure{margin: 20px auto 0px;
+/*adding figure formatting*/
+figure{margin:auto ; /*allows it to center within the section*/
      width:80%;
 }
 figure img {display:block;
-            width:100%;
+            width:50%;
+            margin-right:auto; /*centers it within the page*/
+            margin-left:auto; /*centers it within the page*/
 }
 figure figcaption{font-style: italic;
                   padding: 10px 0;
                  text-align:center;
+                 font-size:8pt;
 }
 
 /*styles the paragraphs no matter the location in the document*/
 p {margin: 5px;
    padding:5px;
    font-size: 12pt;
-   line-height: 1.5em}
+   line-height: 1.5em;} /*added em to remove the different spacing with the first letter of the paragraph being larger.
+
 
 /*styles the first letter of every paragraph*/
 p::first-letter {font-family: 'Dancing Script', cursive;
@@ -119,39 +115,35 @@ p::first-letter {font-family: 'Dancing Script', cursive;
                   width:30%;
                   float:right;
                   margin-left:10px;
+                  margin-top:auto;
+                  margin-bottom: auto;
                   padding-top:0;
                   ;}
 /*setting up 2 columns in the services page*/
-#services {column-count: 2;
+#services {column-count: 2; /*creating a two column layout*/
            -moz-column-count:2; 
            -webkit-column-count:2;
-            column-width:50%;
-            column-gap:30px;
+            column-gap:30px; /*to keep the gap between columns consistent and larger than default*/
             -moz-column-gap:30px;
             -webkit-column-gap:30px;
-            column-rule: 2px solid white;
+            column-rule: 2px solid white; /*puts the line between the two columns*/
             -moz-column-rule: 2px solid white;
             -webkit-column-rule: 2px solid white;
 }
 #services img{padding-left:10px;
               break-after: auto;
 }
-#services h2{column-span:all;
+#services h2{column-span:all; /*allows the heading to be above the two columns instead of within the first*/
             -moz-column-span:all;
             -webkit-column-span:all;
-            column-width:50%
 }
 #services p{
-    orphans:3;
-    widows:3;  
+    orphans:3; /*requires at least three lines prior to the column break*/
+    widows:3; /*requires to have at least three lines on the next column*/  
 }
-#contacts {column-count:2;
-           -moz-column-count:2; 
-           -webkit-column-count:2;
-           column-gap:30px;
-           -moz-column-gap:30px;
-           -webkit-column-gap:30px;
-           column-width: 25% 75%;
+#contacts {text-align:center;
+           width:75%;
+           margin:auto; /*keeps it centered*/          
 }
 
 /*formatting of lists contained in an article
@@ -184,32 +176,29 @@ article ul ul li{list-style-image: none; /*removes markers*/
 
 /*format a table*/
 table {border-collapse:collapse; /*removes double borders*/
-      width:30%;
+      width:60%; 
       text-align:center;
+      margin:auto; /*keeps it centered*/
 }
 table caption{caption-side:bottom;
                text-align:center;
-               font-style:italic;}
+               font-style:italic;} /*allows a caption to be added at the bottom of the table vs. at the top*/
 table, th, td{border: 2px solid black;  
-              border-collapse:collapse;
+              border-collapse:collapse;/*removes double borders*/
               text-align:center;
               padding-left:5px;
 }
+/*provides formatting for the header row*/
 th{height: 20px;
    width: 100px;
-   background-color:rgb(189, 88, 128);
+   background-color:rgb(189, 88, 128); 
    color: white;
    font-weight:bold;
 }
 td{padding:5px;}
 
 /*formatting the contact into two separate div columns*/
-#contact1{display:table-row;
-          width: 100%;
-          float:left;
-          text-align:center;
-          margin-left:auto;
-          margin-right:auto;
+
 }
 /*formats the address*/
 address {margin-left:20px;
