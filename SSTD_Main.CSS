@@ -122,6 +122,27 @@ p::first-letter {font-family: 'Dancing Script', cursive;
                   margin-bottom: auto;
                   padding-top:0;
                   ;}
+/*formatting of lists contained in an article
+Markers are images / different for main &sub lists
+*/
+/*main list*/
+article ul li{list-style-type: none; /*removes markers*/
+            background-image: url(Images/wholecakebullet.jpg); /*inserting the marker image*/
+            background-repeat: no-repeat; /*allows it only appear once*/
+            padding-left: 18px;
+            margin:5px;
+            background-position: 0px 2px; /*moves the marker location*/
+            background-size: 16px; /*changes the size of the marker*/
+            font-size: 11pt;}
+/*sub list*/
+article ul ul li{list-style-image: none; /*removes markers*/
+              background-image: url(Images/slicecakebullet.jpg); /*inserting the marker image*/
+              background-repeat: no-repeat; /*allows it only appear once*/
+              padding-left: 18px;
+              background-position: 0px 2px; /*moves the marker location*/
+              background-size: 16px; /*changes the size of the marker*/
+              font-size: 10pt;}
+
 /*setting up 2 columns in the services page*/
 #services {column-count: 2; /*creating a two column layout*/
            -moz-column-count:2; 
@@ -144,39 +165,15 @@ p::first-letter {font-family: 'Dancing Script', cursive;
     orphans:3; /*requires at least three lines prior to the column break*/
     widows:3; /*requires to have at least three lines on the next column*/  
 }
-#contacts {text-align:center;
-           width:75%;
-           margin:auto; /*keeps it centered*/          
+
+#video{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top:25px;
+    
 }
-
-/*formatting of lists contained in an article
-Markers are images / different for main &sub lists
-*/
-/*main list*/
-article ul li{list-style-type: none; /*removes markers*/
-            background-image: url(Images/wholecakebullet.jpg); /*inserting the marker image*/
-            background-repeat: no-repeat; /*allows it only appear once*/
-            padding-left: 18px;
-            margin:5px;
-            background-position: 0px 2px; /*moves the marker location*/
-            background-size: 16px; /*changes the size of the marker*/
-            font-size: 11pt;}
-/*sub list*/
-article ul ul li{list-style-image: none; /*removes markers*/
-              background-image: url(Images/slicecakebullet.jpg); /*inserting the marker image*/
-              background-repeat: no-repeat; /*allows it only appear once*/
-              padding-left: 18px;
-              background-position: 0px 2px; /*moves the marker location*/
-              background-size: 16px; /*changes the size of the marker*/
-              font-size: 10pt;}
-
-
-
-/*not using this yet - update later
-#content_container {background:rgb(176,219,216);
-                  width:70%;
-                  float:left;}*/
-
 /*format a table*/
 table {border-collapse:collapse; /*removes double borders*/
       width:60%; 
@@ -191,19 +188,16 @@ table, th, td{border: 2px solid black;
               text-align:center;
               padding-left:5px;
 }
-/*provides formatting for the header row*/
+/*provides formatting for the header row of the table*/
 th{height: 20px;
    width: 100px;
    background-color:rgb(189, 88, 128); 
    color: white;
    font-weight:bold;
 }
-td{padding:5px;}
 
-/*formats the address*/
-address {margin-left:20px;
-         font-size:12pt;
-        padding:15px;
+td{
+    padding:5px;
 }
 
 /*formatting the photo gallery*/
@@ -234,6 +228,16 @@ address {margin-left:20px;
     border-radius: 15px;
 }
 
+/*formats the contact us page*/
+#contacts {text-align:center;
+           width:75%;
+           margin:auto; /*keeps it centered*/          
+}
+/*formats the address*/
+address {margin-left:20px;
+         font-size:12pt;
+        padding:15px;
+}
 
 /*formats the main footer box*/
 footer {background-color:white;
