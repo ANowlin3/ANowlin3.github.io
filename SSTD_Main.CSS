@@ -200,6 +200,22 @@ td{
     padding:5px;
 }
 
+/*format audio*/
+#audio_container1{
+    margin-top:15 px;
+    text-align:left;
+}
+#audio_container1 h6{
+    text-align:left;
+    font-style:normal;
+    font-weight:100;
+    padding-left:10px;
+    margin:0;
+}
+#audio_container1 audio{
+    padding-left:5px;
+}
+
 /*formatting the photo gallery*/
 .gallery {
     display:flex;
