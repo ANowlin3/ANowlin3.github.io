@@ -166,13 +166,16 @@ article ul ul li{list-style-image: none; /*removes markers*/
     widows:3; /*requires to have at least three lines on the next column*/  
 }
 
-#video{
+video{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    align-content: center;
     padding-top:25px;
-    
+    max-width: 50%;
+    height: auto;  
+}
+   
 }
 /*format a table*/
 table {border-collapse:collapse; /*removes double borders*/
