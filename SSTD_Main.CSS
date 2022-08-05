@@ -207,21 +207,21 @@ td{
     margin-top:15px;
     text-align:left;
 }
-#audio_container1 h6{
+#audio_container1 h6{ /*adjusts the font and placement of the heading*/
     text-align:left;
     font-style:normal;
     font-weight:100;
     padding-left:10px;
     margin:0;
 }
-#audio_container1 audio{
+#audio_container1 audio{ /*moves the audio control buttons*/
     padding-left:5px;
 }
 
 /*formatting the photo gallery*/
 .gallery {
     display:flex;
-    flex-direction: column;
+    flex-direction: column; /*sets it up in columns*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -231,17 +231,17 @@ td{
 .gallery .box{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /*places spacing between the rows*/
 }
 
 .gallery .box .pics{
     display: flex;
     flex-direction: column;
-    width: 24%;
+    width: 24%; /*puts an equal portion width of all 4 columns to adjust with the width of the screen*/
 }
 
 .gallery .box .pics img{
-    width: 100%;
+    width: 100%; /*puts the full width based on the .pics width for window adjustment sizing*/
     padding-bottom: 10px;
     border-radius: 15px;
 }
