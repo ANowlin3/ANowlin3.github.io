@@ -57,6 +57,70 @@
                     <tr><td><strong>Email: </strong>southernsweettreatdelights@email.com </td></tr>
                 </table>
             </div>
+            <div>
+                <p>Are you interested in receiving our weekly, monthly, or quarterly subscription emails? These include recipes, tips and tricks, local pick up deals, and many more. If so, please fill out the information below to begin that service now. </p>
+                <form id="EmailSubscribers">
+                    <h3>Email Subscription Sign-Up Form</h3>
+                    <fieldset>
+                        <legend>Basic Information</legend>
+                            <label for="FName">First Name:</label>
+                            <input type="text" name="FirstName" id="FName">
+                            <br><br>
+                            <label for="LName">Last Name:</label>
+                            <input type="text" name="LastName" id="LName">
+                            <br><br>
+                            Where do you reside?
+                            <label for="USA">USA:</label>
+                            <input type="Radio" name="Country" id="USA">
+                            <label for="Canada">Canada:</label>
+                            <input type="Radio" name="Country" id="Canada">
+                            <label for="Other">Other:</label>
+                            <input type="Radio" name="Country" id="Other"><br><br>
+                            <label for="DOB">Date of Birth:</label>
+                            <input type="date" name="DateOfBirth" id="DOB">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                            <label for="EmailAddress">Email Address:</label>
+                            <input type="email" name="Email" id="EmailAddress">
+                            <br><br>
+                        <h4>How often would you like to hear from us? </h4>     <h5>(Multiple Options Available.)</h5><br>
+                            <input type="checkbox" name="Weekly" id="WeeklyTiming" value="Weekly"> 
+                            <label for="WeeklyTiming">Weekly</label><br>
+                            <input type="checkbox" name="Monthly" id="MonthlyTiming" value="Monthly"> 
+                            <label for="MonthlyTiming">Monthly</label><br>
+                            <input type="checkbox" name="Quarterly" id="QuarterlyTiming" value="Quarterly"> 
+                            <label for="QuarterlyTiming">Quarterly</label><br><br>
+                        <h4>What type of information would you like to receive? </h4>
+                        <h5>(Multiple Options Available.)</h5> <br>
+                            <input type="checkbox" name="LocalDiscounts" id="Local" value="Local Discounts"> 
+                            <label for="Local">Local Discounts</label><br>
+                            <input type="checkbox" name="KidFriendly" id="KidFriendly" value="Kid Friendly"> 
+                            <label for="KidFriendly">Kid Friendly</label><br>
+                            <input type="checkbox" name="Tools" id="Tools" value="Tools"> 
+                            <label for="Tools">Tools</label><br>
+                            <input type="checkbox" name="Recipes" id="Recipes" value="Recipes"> 
+                            <label for="Recipes">Recipes</label><br>
+                    </fieldset>   
+                    <fieldset>
+                        <Legend>Feedback</Legend>
+                        <label for="Feedback">How did you hear about us?</label><br>
+                        <select name="Feedback" id="Feedback">
+                        <option value="Employee">Employee</option>
+                        <option value="FriendFamily">Friend and/or Family</option>
+                        <option value="Other">Other</option>
+                        <option value="Reviews">Reviews</option>
+                        <option value="SearchEngine">Search Engine</option>
+                        <option value="SocialMedia">Social Media</option>
+                        <option value="WalkIn" selected>Walk-In/Dine-In</option>
+                        </select>
+                        <br><br>
+                        If "Other" selected above, please provide additional information:
+                        <textarea rows="3" cols="30" name="StreetAddress"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </article>
     </section>
 

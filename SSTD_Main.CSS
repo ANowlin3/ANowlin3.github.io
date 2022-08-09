@@ -256,6 +256,33 @@ address {margin-left:20px;
          font-size:12pt;
         padding:15px;
 }
+/*formats the form on the contact us page*/
+form{width:75%;
+    margin: auto;
+    border:solid white 5px;
+    background:rgb(189, 88, 128);
+    padding:5px;
+    color:white;
+    border-radius: 10px;
+}
+fieldset{border:white 2px solid;
+        margin: 10px;
+}
+form h3{color:white;
+        text-align:center;
+        font-family:'Dancing Script', cursive;
+        font-size: 35px;
+        font-weight:bolder;
+}
+form legend{color:white; 
+            font-weight:bolder;
+            font-size: 20px;
+}
+form h5, h4{text-align:left;
+            font-weight:normal;
+            padding:0;
+            margin:0;
+}
 
 /*formats the main footer box*/
 footer {background-color:white;
