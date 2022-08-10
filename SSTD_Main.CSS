@@ -307,6 +307,9 @@ select{display:inline-block;
        height:25px;
 }
 
+textarea{width:75%;
+       height:auto;
+}
 /*formats the main footer box*/
 footer {background-color:white;
         text-align: center;
